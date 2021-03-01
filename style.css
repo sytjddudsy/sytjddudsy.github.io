@@ -1,3 +1,17 @@
 *{
+    #background{
+        background-image= url("https://cdn.pixabay.com/photo/2020/06/24/10/51/roses-5335743_960_720.jpg");
+        height: 100%;
+        width: 100%
+    }
+    @font-face {
+        font-family: 'Nanum Myeongjo';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/nanummyeongjo/v15/9Bty3DZF0dXLMZlywRbVRNhxy2pXV1Axzeau69lCAWDrAgLCcAPYKgRK4K8.0.woff2) format('woff2');
+        unicode-range: U+f9ca-fa0b, U+ff03-ff05, U+ff07, U+ff0a-ff0b, U+ff0d-ff19, U+ff1b, U+ff1d, U+ff20-ff5b, U+ff5d, U+ffe0-ffe3, U+ffe5-ffe6;
+      }
+
     color: #312546;
 }
