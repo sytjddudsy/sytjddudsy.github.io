@@ -12,8 +12,35 @@
         <input type= "password" id="user-pw" name="user-pw">
         <br><br>
         <!--type number 하면 숫자 올리고 내릴 수 있음. step은 올라가는 숫자 (1이면 1씩, 2면 2씩)-->
-        <label for="">먹을 와퍼 수</label> <input type= "number" step="1" name="와퍼 갯수" id="와퍼 갯수">
-        <br> 나 잔다
+        <label for="amount">먹을 와퍼 수</label> <input type= "number" step="1" name="와퍼 갯수" id="와퍼 갯수">
+        <br>
+        <label for="패티"><h3>패티 익힘 정도</h3></label> 
+        <!--type:range는 볼륨 커서 처럼 된 것. min 최소치 max 최대치 step 얼마나 늘어나는지 label이 헷갈린다...-->
+        <span>미디움</span><input id="doneness" name="doneness" type="range" min="0" max="5" step="1"><span>웰던</span>
+        <section class="사이드">
+            <br>
+            <span><h3>사이드 주문</h3></span>
+            <input id="감자튀김" name="사이드" type="checkbox" value="감자튀김"><label for="감자튀김">감자튀김</label>
+            <input id="샐러드" name="사이드" type="checkbox" value="샐러드"><label for="샐러드">샐러드</label>
+            <input id="치즈스틱" name="사이드" type="checkbox" value="치즈스틱"><label for="치즈스틱">치즈스틱</label>
+            <input id="너겟" name="사이드" type="checkbox" value="너겟"><label for="너겟">너겟</label>
+        </section>
+            <br>
+        <section class="cola"><h3>콜라 사이즈 업</h3>
+            <input id="yes" name="cola" type="radio" value="yes"><label for="yes">yes</label>
+            <input id="no" name="cola" type="radio" value="no"><label for="no">no</label>
+        </section>
+        <!--select는 선택 메뉴가 정해져있음. option value로 메뉴 정해짐-->
+        <br>
+        <label for="menu"><h3>무슨 버거 먹을래?</h3></label>
+            <select id="menu" name="menu">
+                <option value="주니어와퍼">주니어와퍼</option>
+                <option value="콰트로치즈와퍼">콰트로치즈와퍼</option>
+                <option value="불고기와퍼">불고기와퍼</option>
+                <option value="몬스터와퍼">몬스터와퍼</option>
+                <option value="베이컨치즈와퍼">베이컨치즈와퍼</option>
+                <option value="통모짜와퍼">통모짜와퍼</option>
+            </select>
     </form>
     
 
