@@ -26,22 +26,44 @@
             <input id="너겟" name="사이드" type="checkbox" value="너겟"><label for="너겟">너겟</label>
         </section>
             <br>
-        <section class="cola"><h3>콜라 사이즈 업</h3>
-            <input id="yes" name="cola" type="radio" value="yes"><label for="yes">yes</label>
-            <input id="no" name="cola" type="radio" value="no"><label for="no">no</label>
-        </section>
         <!--select는 선택 메뉴가 정해져있음. option value로 메뉴 정해짐-->
-        <br>
-        <label for="menu"><h3>무슨 버거 먹을래?</h3></label>
+        <section class="버거 종류">
+            <label for="menu"><h3>무슨 버거 먹을래?</h3></label>
             <select id="menu" name="menu">
-                <option value="주니어와퍼">주니어와퍼</option>
-                <option value="콰트로치즈와퍼">콰트로치즈와퍼</option>
-                <option value="불고기와퍼">불고기와퍼</option>
-                <option value="몬스터와퍼">몬스터와퍼</option>
-                <option value="베이컨치즈와퍼">베이컨치즈와퍼</option>
-                <option value="통모짜와퍼">통모짜와퍼</option>
-            </select>
+                    <option value="주니어와퍼">주니어와퍼</option>
+                    <option value="콰트로치즈와퍼">콰트로치즈와퍼</option>
+                    <option value="불고기와퍼">불고기와퍼</option>
+                    <option value="몬스터와퍼">몬스터와퍼</option>
+                    <option value="베이컨치즈와퍼">베이컨치즈와퍼</option>
+                    <option value="통모짜와퍼">통모짜와퍼</option>
+             </select>
+            </section>
+            <br>
+            <!--other에 기타 입력 가능-->
+            <section class="음료수 선택">
+                <label for="음료수"><h3>음료수 선택</h3></label>
+                <input list="음료수 종류" id="음료수" name="음료수">
+                <datalist id="음료수 종류">
+                    <option value="콜라"></option>
+                    <option value="사이다"></option>
+                    <option value="환타"></option>
+                    <option value="기타"></option>
+                </datalist>
+        </section>
+            </section>
+            <br>
+            <section class="cola"><h3>음료 사이즈 업</h3>
+                <input id="yes" name="cola" type="radio" value="yes"><label for="yes">yes</label>
+                <input id="no" name="cola" type="radio" value="no"><label for="no">no</label>
+            </section>
+            <br>
+            <section class="기타">
+                <label for="기타"><h3>기타 요구 사항</h3></label>
+                <!--textarea 공란에 아무거나 작성 가능. rows는 줄 수, cols는 한 줄에 들어가는 글자 수-->
+                <textarea id="기타" name="기타" rows="5" cols="60">내용을 입력하세요</textarea>
+            </section>
+            <br><input type="submit" value="주문">
     </form>
-    
+    날먹 죄송 자러감
 
 </body>
