@@ -3,16 +3,16 @@
 </head>
 <body>
     <form>
-        <!--input 입력창 만들기-->
+        <!--input 입력창 만들기/required 해두면 아무것도 입력하지 않으면 넘어가지 않음-->
         <h3>오늘 뭐 먹고 싶지?</h3>
         <label for ="villain">Villain: </label> &emsp;
-        <input type="text" name="villain" id="villain">
+        <input type="text" name="villain" id="villain" required>
         <br>
         <label for= "user-pw">Password</label>
         <input type= "password" id="user-pw" name="user-pw">
         <br><br>
-        <!--type number 하면 숫자 올리고 내릴 수 있음. step은 올라가는 숫자 (1이면 1씩, 2면 2씩)-->
-        <label for="amount">먹을 와퍼 수</label> <input type= "number" step="1" name="와퍼 갯수" id="와퍼 갯수">
+        <!--type number 하면 숫자 올리고 내릴 수 있음. step은 올라가는 숫자 (1이면 1씩, 2면 2씩) min은 최소 max는 최대-->
+        <label for="amount">먹을 와퍼 수</label> <input type= "number" step="1" name="와퍼 갯수" id="와퍼 갯수" min="1" max="4">
         <br>
         <label for="패티"><h3>패티 익힘 정도</h3></label> 
         <!--type:range는 볼륨 커서 처럼 된 것. min 최소치 max 최대치 step 얼마나 늘어나는지 label이 헷갈린다...-->
@@ -59,8 +59,8 @@
             <br>
             <section class="기타">
                 <label for="기타"><h3>기타 요구 사항</h3></label>
-                <!--textarea 공란에 아무거나 작성 가능. rows는 줄 수, cols는 한 줄에 들어가는 글자 수-->
-                <textarea id="기타" name="기타" rows="5" cols="60">내용을 입력하세요</textarea>
+                <!--textarea 공란에 아무거나 작성 가능. rows는 줄 수, cols는 한 줄에 들어가는 글자 수 minlength 최소글자수 maxlength 최대글자수-->
+                <textarea id="기타" name="기타" rows="5" cols="60" minlength="1" maxlength="250">내용을 입력하세요</textarea>
             </section>
             <br><input type="submit" value="주문">
     </form>
