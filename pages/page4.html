@@ -3,13 +3,13 @@
 </head>
 <body>
     <form>
-        <!--input 입력창 만들기/required 해두면 아무것도 입력하지 않으면 넘어가지 않음-->
+        <!--input 입력창 만들기/required 해두면 아무것도 입력하지 않으면 넘어가지 않음 pattern은 그 조건에 맞는 문자만 승인함. +하면 조건 추가였나? 까먹음-->
         <h3>오늘 뭐 먹고 싶지?</h3>
         <label for ="villain">Villain: </label> &emsp;
-        <input type="text" name="villain" id="villain" required>
+        <input type="text" name="villain" id="villain" required pattern="[a-zA-Z0-9]+">
         <br>
         <label for= "user-pw">Password</label>
-        <input type= "password" id="user-pw" name="user-pw">
+        <input type= "password" id="user-pw" name="user-pw" required minlength="4" maxlength="12" pattern="[0-9]">
         <br><br>
         <!--type number 하면 숫자 올리고 내릴 수 있음. step은 올라가는 숫자 (1이면 1씩, 2면 2씩) min은 최소 max는 최대-->
         <label for="amount">먹을 와퍼 수</label> 
@@ -65,6 +65,6 @@
             </section>
             <br><input type="submit" value="주문">
     </form>
-    날먹 죄송 자러감
+    날먹 죄송 자러감 시험보러감
 
 </body>
