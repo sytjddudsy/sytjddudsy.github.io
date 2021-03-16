@@ -1,5 +1,5 @@
 #banner {
-    position: absolute;
+    position: fixed;
     background-image: url(https://cdn.pixabay.com/photo/2018/04/06/00/25/nature-3294681_960_720.jpg);
     background-size: cover;
     background-position: center;
@@ -19,6 +19,7 @@
     padding: 25px 25px;
     letter-spacing: 2px;
     line-height: 36px;
+    background-color: hsla(245, 100%, 0%, 0.5);
 }
 
 #kirari{
@@ -34,6 +35,7 @@
 
 .box1 {
     position: relative;
+    font-family: "Courier New";
     text-align: center;
     width: 180px;
     height: 70px;
