@@ -28,7 +28,11 @@
   overflow: scroll;
   padding: 60px;
   height: 600px;
+  letter-spacing: 0.01em;
+  word-spacing: 1em;
+  text-transform: uppercase;
 }
+
 .test {
   visibility: hidden;
 }
