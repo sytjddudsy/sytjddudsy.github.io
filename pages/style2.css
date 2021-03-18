@@ -22,7 +22,7 @@
     background-color: hsla(245, 100%, 0%, 0.5);
 }
 
-#kirari{
+#kirari {
   text-align: center;
   line-height: 24px;
   overflow: scroll;
@@ -31,6 +31,22 @@
   letter-spacing: 0.01em;
   word-spacing: 1em;
   text-transform: uppercase;
+  line-height: 1.4
+}
+
+#kir div{
+  font-family: "Hachi Maru Pop";
+}
+
+#plastic{
+  text-align: center;
+  line-height: 24px;
+  padding: 60px;
+  height: 600px;
+  letter-spacing: 0.01em;
+  word-spacing: 1em;
+  text-transform: uppercase;
+  line-height: 1.4
 }
 
 .test {
@@ -39,7 +55,6 @@
 
 .box1 {
     position: relative;
-    font-family: "Courier New";
     text-align: center;
     width: 180px;
     height: 70px;
