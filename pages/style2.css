@@ -1,3 +1,4 @@
+
 #banner {
     position: fixed;
     background-image: url(https://cdn.pixabay.com/photo/2018/04/06/00/25/nature-3294681_960_720.jpg);
@@ -25,16 +26,12 @@
 #kirari {
   text-align: center;
   line-height: 24px;
-  overflow: scroll;
   padding: 60px;
   height: 600px;
   letter-spacing: 0.01em;
   word-spacing: 1em;
   text-transform: uppercase;
-  line-height: 1.4
-}
-
-#kir div{
+  line-height: 1.4;
   font-family: "Hachi Maru Pop";
 }
 
@@ -45,12 +42,8 @@
   height: 600px;
   letter-spacing: 0.01em;
   word-spacing: 1em;
-  text-transform: uppercase;
-  line-height: 1.4
-}
-
-.test {
-  visibility: hidden;
+  line-height: 1.4;
+  font-family: 'DotGothic16', "Hachi Maru Pop"; 
 }
 
 .box1 {
@@ -65,4 +58,8 @@
     clear: left;
     top: 40px;
     background-color: DeepSkyBlue
+}
+
+#flex {
+  display:flex;
 }
