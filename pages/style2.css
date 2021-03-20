@@ -63,3 +63,25 @@
 #flex {
   display:flex;
 }
+
+.piano {
+  width: 150px;
+  border: 1px solid violet;
+  display: inline-flex;
+}
+
+.keybord{
+  background-color: Dodgerblue;
+  height: 75px;
+  width: 75px;
+  border: 1px solid turquoise;
+}
+
+.box2 {
+  background-color: blanchedalmond;
+  height: 75px;
+  width: 75px;
+  border: 1px solid black;
+}
+
+
