@@ -70,13 +70,6 @@
   display: inline-flex;
 }
 
-.keybord{
-  background-color: Dodgerblue;
-  height: 75px;
-  width: 75px;
-  border: 1px solid turquoise;
-}
-
 .box2 {
   background-color: blanchedalmond;
   height: 75px;
@@ -85,3 +78,38 @@
 }
 
 
+.long,
+.short {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  border: 2px solid lightgrey;
+  margin: 10px 30px;
+  text-align: center;
+}
+
+.long.side {
+  flex-shrink: 0;
+}
+
+.long.center {
+flex-grow: 1;
+}
+
+.short.side {
+flex-grow: 1;
+}
+
+.short.center {
+	flex-grow: 2;
+  flex-shrink: 2;
+}
+
+#long,
+#short {
+  display: flex;
+  background-color: Whitesmoke;
+  justify-content: center;
+  min-height: 200px;
+  align-items: center;
+}
