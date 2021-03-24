@@ -89,6 +89,7 @@
 }
 
 .long.side {
+  flex-basis: 60px;
   flex-shrink: 0;
 }
 
@@ -97,6 +98,7 @@ flex-grow: 1;
 }
 
 .short.side {
+  flex-basis: 200px;
 flex-grow: 1;
 }
 
