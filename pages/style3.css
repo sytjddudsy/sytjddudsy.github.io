@@ -1,0 +1,44 @@
+.main{
+    background-color: pink;
+    width: 800px;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container{
+    background-color: brown;
+    width: 400px;
+    height: 400px;
+    background-color: coral;
+    border: 3px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.test{
+    background-color: wheat;
+    width: 100px;
+    height: 50px;
+    border: 10px solid tomato;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid{
+    border: 3px solid aquamarine;
+    width: 800px;
+    height: 800px;
+    display: grid;
+}
+
+.box{
+    background-color: skyblue;
+    color: blue;
+    border-radius: 10px;
+    border: 1px solid blueviolet;
+}
