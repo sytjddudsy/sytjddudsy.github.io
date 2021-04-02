@@ -50,4 +50,33 @@
     height: 600px;
     display: grid;
     grid-template: 200px minmax(50px, 300px) / repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
 }
+
+.grid3 {
+    display: grid;
+    border: 2px blue solid;
+    height: 800px;
+    width: 1000px;
+    grid-template: repeat(4, 1fr 2fr) / repeat(4, 3fr 2fr);
+    grid-gap: 5px;
+  }
+  
+  .box5 {
+    background-color: skyblue;
+    color: blue;
+    border-radius: 10px;
+    border: 1px solid blueviolet;
+    grid-row: 4/6;
+    grid-column: 6/ span 2;
+  }
+  
+  .box6{
+    grid-column: 2 / span 3;
+    grid-row: 5/5;
+    background-color: skyblue;
+    color: blue;
+    border-radius: 10px;
+    border: 1px solid blueviolet;
+  }
