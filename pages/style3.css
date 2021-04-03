@@ -44,16 +44,6 @@
     border: 1px solid blueviolet;
 }
 
-.grid2{
-    border: 3px solid aquamarine;
-    width: 800px;
-    height: 600px;
-    display: grid;
-    grid-template: 200px minmax(50px, 300px) / repeat(3, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-}
-
 .grid3 {
     display: grid;
     border: 2px blue solid;
@@ -68,15 +58,61 @@
     color: blue;
     border-radius: 10px;
     border: 1px solid blueviolet;
-    grid-row: 4/6;
-    grid-column: 6/ span 2;
+    grid-area: 4 / 6 / 6 / span 2;
   }
   
   .box6{
-    grid-column: 2 / span 3;
-    grid-row: 5/5;
+    grid-area: 5 / 2 / 5 / span 3;
     background-color: skyblue;
     color: blue;
     border-radius: 10px;
     border: 1px solid blueviolet;
+  }
+
+  .blog{
+      display: grid;
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+      grid-gap: 15px;
+        grid-template-rows: 150px 200px 600px 200px;
+        grid-template-columns: 200px 400px;
+        grid-template-areas: "header header"
+                             "nav nav"
+                             "left right"
+                             "footer footer";
+}
+
+header{
+    background-color: mediumslateblue;
+    grid-area: header;
+    text-align: center;
+  }
+
+  nav {
+    background-color: white;
+    border: tomato solid 1px;
+      grid-area: nav;
+      text-align: center;
+  }
+  
+  .left {
+    background-color: pink;
+      grid-area: left;
+      text-align: center;
+  
+  }
+  
+  .right {
+    background-color: white;
+    border: solid tomato 1px;
+      grid-area: right;
+      text-align: center;
+  
+  }
+  
+  footer {
+    background-color: pink;
+      grid-area: footer;
+      text-align: center;
   }
