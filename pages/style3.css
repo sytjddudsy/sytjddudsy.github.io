@@ -112,6 +112,12 @@ header{
     text-align: center;
   grid-area: 6 / 4 / 8 / 6;
   z-index: 5;
+  transition-property: background-color;
+  transition-duration: 1s;
+  }
+
+  .overlap:hover{
+    background-color: lawngreen;
   }
 
   footer {
