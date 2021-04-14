@@ -6,8 +6,7 @@ h2{
 
 main {
   display: grid;
-  grid-template-columns: 300px 300px;
-  grid-template-rows: repeat(3,500px);
+  grid-template-columns: 200px 200px 200px 200px;
   grid-gap: 50px;
   margin-top: 40px;
   grid-auto-rows: 600px;
